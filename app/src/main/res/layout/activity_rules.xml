@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RulesActivity"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:background="@color/colorBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rulesA"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/example_field" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rulesB"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="400dp"
+                app:srcCompat="@drawable/instruction" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rulesC"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:background="@drawable/buttons"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="@string/back"
+        android:onClick="onClick"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="4dp"/>
+</RelativeLayout>

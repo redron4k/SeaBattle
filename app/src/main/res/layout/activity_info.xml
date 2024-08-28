@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".InfoActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/txt_info"
+        android:textAllCaps="false"
+        android:layout_marginBottom="50dp"/>
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:text="@string/vk_info"
+        android:layout_below="@id/textView"
+        android:autoLink="web"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:text="@string/mail_info"
+        android:layout_below="@id/textView2"
+        android:autoLink="email"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/help"
+        android:layout_below="@id/textView3"
+        android:layout_marginBottom="60dp"
+        android:clickable="true"
+        android:onClick="onClick" />
+
+    <TextView
+        android:id="@+id/version"
+        android:textSize="25sp"
+        android:layout_below="@id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/version" />
+
+    <Button
+        android:id="@+id/button"
+        android:background="@drawable/buttons"
+        android:layout_height="40dp"
+        android:layout_width="100dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClick"
+        android:text="@string/back"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_margin="4dp"/>
+</RelativeLayout>

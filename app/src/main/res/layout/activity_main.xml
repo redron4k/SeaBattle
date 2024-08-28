@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="50dp"
+        android:text="@string/app_name"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="60sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/play"
+        android:layout_above="@id/rules"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttons"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="@string/b1_main"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/rules"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buttons"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:onClick="onClick"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:text="@string/b2_main"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/autors"
+        android:background="@drawable/buttons"
+        android:padding="10dp"
+        android:onClick="onClick"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:text="@string/b3_main"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_below="@id/rules"/>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="320dp"
+        android:layout_height="276dp"
+        app:srcCompat="@drawable/ship_photo_main" />
+
+    <TextView
+        android:id="@+id/design"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6sp"
+        android:text="designed for mobile devices"
+        android:textSize="10sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageButton
+        android:id="@+id/closeAll"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/close_icon"
+        android:onClick="onClick"
+        android:background="@color/alpha"
+        android:layout_margin="5dp"/>
+
+</RelativeLayout>
+
+

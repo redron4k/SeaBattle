@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.main">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ship_photo"
+        android:label="@string/app_title"
+        android:roundIcon="@mipmap/ship_photo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DialogActivity"
+            android:theme="@style/Theme.AppCompat.Dialog"/>
+        <activity
+            android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InfoActivity"/>
+        <activity
+            android:name=".CreateActivity"/>
+        <activity
+            android:name=".RulesActivity"/>
+        <activity
+            android:name=".MainActivity"/>
+    </application>
+
+</manifest>

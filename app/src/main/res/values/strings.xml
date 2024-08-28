@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name" translatable="false">SeaBattle</string>
+    <string name="app_title" translatable="false">SeaBattle</string>
+    <string name="rulesK">
+"\t"У лукоморья дуб зелёный;"\n"
+Златая цепь на дубе том:"\n"
+И днём и ночью кот учёный"\n"
+Всё ходит по цепи кругом;"\n"
+Идёт направо — песнь заводит,"\n"
+Налево — сказку говорит."\n"
+Там чудеса: там леший бродит,"\n"
+Русалка на ветвях сидит;"\n"
+Там на неведомых дорожках"\n"
+Следы невиданных зверей;"\n"
+Избушка там на курьих ножках"\n"
+Стоит без окон, без дверей;"\n"
+Там лес и дол видений полны;"\n"
+Там о заре прихлынут волны"\n"
+На брег песчаный и пустой,"\n"
+И тридцать витязей прекрасных"\n"
+Чредой из вод выходят ясных,"\n"
+И с ними дядька их морской;"\n"
+Там королевич мимоходом"\n"
+Пленяет грозного царя;"\n"
+Там в облаках перед народом"\n"
+Через леса, через моря"\n"
+Колдун несёт богатыря;"\n"
+В темнице там царевна тужит,"\n"
+А бурый волк ей верно служит;"\n"
+Там ступа с Бабою Ягой"\n"
+Идёт, бредёт сама собой,"\n"
+Там царь Кащей над златом чахнет;"\n"
+Там русский дух… там Русью пахнет!"\n"
+И там я был, и мёд я пил;"\n"
+У моря видел дуб зелёный;"\n"
+Под ним сидел, и кот учёный"\n"
+Свои мне сказки говорил.</string>
+    <string name="rulesA">
+        <b>"Sea battle"</b> - a game for two participants,
+        in which players take turns to call the
+        coordinates on an unknown map of the opponent.
+        If the opponent has a ship at these coordinates
+        (the coordinates are occupied), then the ship
+        or part of it is "drowned", and the hit gets the
+        right to make another move. The player\'s goal
+        is to be the first to sink all the enemy\'s ships.</string>
+    <string name="b1_main">Play</string>
+    <string name="b2_main">Rules</string>
+    <string name="b3_main">Info</string>
+    <string name="txt_create">Arrange your ships:</string>
+    <string name="rotate_create">rotate</string>
+    <string name="auto_create">auto</string>
+    <string name="next">next</string>
+    <string name="back">back</string>
+    <string name="version">Application version" "</string>
+    <string name="vk_info">VK community:"\n"&#8195;https://vk.com/vk_2020help</string>
+    <string name="txt_info">Contact the author:</string>
+    <string name="mail_info">Send an email:"\n"&#8195;2020-help@mail.ru</string>
+    <string name="rulesB">
+        Classic playing field"\n""\n"
+        <b>Alignment of the ships:</b>"\n"
+        To set up a ship you must select the number of decks, turn the ship to the desired side
+        and put the it on the field with the second touch. <b>Important!</b>
+        the ship will end up at the selected point with its upper left point.
+        After placing all the ships, press the "next" button.
+        You can also use automatic placement using the "auto" button.
+    </string>
+    <string name="rulesC">
+        In the drawing, the sequence of touches is indicated by red dots"\n""\n"
+        <b>PLaying:</b>"\n"
+        There are three different types of shots during the game:"\n"
+        1)Standard. Shot at the selected point."\n"
+        2)3✕3. Is fired at the selected point and all her neighbours."\n"
+        3)Torpedo. For the shot, you need to select 2 points that lie on the same straight line (horizontal or vertical).
+        The entire line will be shot."\n"
+        <b>Important!</b> the number of type 2 and 3 shots is limited to 1 time."\n""\n"
+        <b>Fight!</b>
+    </string>
+    <string name="dialog">Are you sure you want to exit the battle?</string>
+    <string name="positive">yes</string>
+    <string name="negative">no</string>
+    <string name= "fourDecks">Four-Deck ship, left </string>
+    <string name= "threeDecks">Three-Deck ship, left </string>
+    <string name= "twoDecks">Two-Deck ship, left </string>
+    <string name= "oneDeck">Single-Deck ship, left </string>
+    <string name="arrangeAll">Arrange all the ships</string>
+    <string name="clearAll">Clear the field</string>
+    <string name="impossible">It is impossible to put the ship</string>
+    <string name="win">You win!</string>
+    <string name="lose">You lose!</string>
+</resources>

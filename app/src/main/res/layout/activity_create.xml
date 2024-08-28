@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:padding="4dp"
+    android:id="@+id/mainLayout">
+
+    <TextView
+        android:id="@+id/createTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_create"
+        android:textAllCaps="false"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:fontFamily="monospace"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pFieldLayout"
+        android:layout_below="@+id/createTxt"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/pField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/field" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/pFieldLayout"
+        android:layout_above="@id/b2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/createTools">
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/changeShip"
+        android:theme="@style/MyRadioButton"
+        android:layout_marginTop="30dp">
+    <RadioButton
+        android:id="@+id/four"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="4" />
+
+    <RadioButton
+        android:id="@+id/three"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="3" />
+
+    <RadioButton
+        android:id="@+id/two"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="2" />
+
+    <RadioButton
+        android:id="@+id/one"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="1" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/rotate"
+        android:background="@drawable/buttons"
+        android:layout_margin="15dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:onClick="onClick"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="@string/rotate_create"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/autoCreate"
+        android:background="@drawable/buttons"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:onClick="onClick"
+        android:text="@string/auto_create"
+        android:layout_marginBottom="75dp"
+        />
+
+        <ImageView
+            android:id="@+id/shipPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ship_4" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/b1"
+        android:background="@drawable/buttons"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClick"
+        android:text="@string/next"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_margin="4dp"
+        />
+
+    <Button
+        android:id="@+id/b2"
+        android:background="@drawable/buttons"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClick"
+        android:text="@string/back"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_margin="4dp"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pFieldLayout"
+        android:layout_above="@id/b2"
+        >
+    </RelativeLayout>
+
+</RelativeLayout>
